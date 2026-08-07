@@ -408,6 +408,84 @@ section { padding: 84px 0; }
 }
 .dl-link:hover { border-color: var(--red); color: var(--red); }
 .dl-link:hover span { border-color: var(--red); color: var(--red); }
+.dl-link.disabled { opacity: 0.5; pointer-events: none; }
+
+/* =========================================================
+   Product dossier layout — sticky anchor subnav + newspaper
+   style 2-column text, used on detailed product pages
+   ========================================================= */
+.product-subnav {
+  position: sticky;
+  top: 81px;
+  z-index: 90;
+  background: rgba(251, 251, 242, 0.96);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid var(--line);
+}
+.product-subnav .subnav-inner {
+  display: flex;
+  gap: 28px;
+  padding: 14px 32px;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  overflow-x: auto;
+}
+.product-subnav a {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+.product-subnav a:hover { color: var(--red); border-color: var(--red); }
+
+.dossier-section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+.dossier-section:last-of-type { border-bottom: none; }
+.dossier-section[id] { scroll-margin-top: 150px; }
+.dossier-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin-bottom: 8px;
+}
+.dossier-section h2 {
+  font-size: 1.7rem;
+  border-bottom: 3px solid var(--red);
+  display: inline-block;
+  padding-bottom: 6px;
+  margin-bottom: 24px;
+}
+
+/* True newspaper column-flow for prose */
+.newspaper-columns {
+  column-count: 2;
+  column-gap: 48px;
+  column-rule: 1px solid var(--line);
+}
+.newspaper-columns p {
+  margin-bottom: 16px;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid-column;
+}
+
+/* Two-column grid for bullet lists */
+.col-list-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4px 48px;
+}
+.col-list-grid .feature-list { margin: 0; }
+
+@media (max-width: 780px) {
+  .newspaper-columns { column-count: 1; column-rule: none; }
+  .col-list-grid { grid-template-columns: 1fr; }
+  .product-subnav .subnav-inner { padding: 12px 20px; gap: 20px; }
+}
 
 /* =========================================================
    Stats strip
