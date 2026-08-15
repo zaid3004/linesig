@@ -275,6 +275,24 @@ p { color: var(--text-muted); }
 }
 .page-hero h1 { margin-bottom: 12px; }
 .page-hero p { max-width: 600px; }
+.model-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.42em;
+  font-weight: 500;
+  vertical-align: middle;
+  color: var(--red);
+  background: var(--surface);
+  border: 1px solid var(--red);
+  padding: 5px 14px;
+  border-radius: 999px;
+  margin-left: 18px;
+  text-transform: none;
+  letter-spacing: 0.05em;
+}
+@media (max-width: 680px) {
+  .model-tag { display: block; margin: 12px 0 0; }
+}
 
 /* =========================================================
    Buttons
