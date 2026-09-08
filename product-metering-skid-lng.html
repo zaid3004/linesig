@@ -87,6 +87,8 @@
   <div class="subnav-inner">
     <a href="#description">Description</a>
     <a href="#features">Features</a>
+    <a href="#specifications">Specifications</a>
+    <a href="#scope">Scope of supply</a>
     <a href="#sequence">Loading sequence</a>
     <a href="#applications">Applications</a>
     <a href="#documents">Documents</a>
@@ -99,8 +101,8 @@
     <p class="dossier-kicker">Product overview · LNS-MS-LNG</p>
     <h2>Description</h2>
     <div class="newspaper-columns">
-      <p>The LineSig LNS-MS-LNG is a dedicated cryogenic tanker-loading metering system for liquefied natural gas. The skid is designed around cryogenic Coriolis mass measurement together with LNG-compatible piping, valves, instrumentation, insulation, ESD interfaces and boil-off/vapour management provisions.</p>
-      <p>The design considers cryogenic operating temperature, cooldown procedure, thermal contraction, pipe flexibility, support loads, insulation, external heat ingress, boil-off gas generation, pressure balance, cryogenic valve design and emergency release. The metering skid is integrated into the wider LNG loading sequence rather than treated as a standalone meter spool. Typical product: liquefied natural gas and project-specific LNG compositions.</p>
+      <p>The LineSig LNS-MS-LNG is a dedicated cryogenic skid-mounted tanker loading metering system for controlled and traceable transfer of liquefied natural gas. The architecture combines cryogenic Coriolis mass flow measurement, cryogenic pressure and temperature monitoring, batch/ESD control, controlled cooldown provisions, thermal relief for trapped liquid sections, cryogenic loading interfaces and vapour/BOG management according to the project loading philosophy.</p>
+      <p>LNS-MS-LNG is a cryogenic product configuration and is not an ambient-service skid with substituted materials. Final design requires project LNG composition, operating and design temperature/pressure, minimum design metal temperature, cooldown sequence, boil-off gas philosophy, loading-arm/ERC data, trapped-liquid thermal relief, thermal-movement analysis, insulation/vacuum-jacket philosophy and hazardous-area requirements.</p>
     </div>
   </div>
 </section>
@@ -112,29 +114,91 @@
     <div class="col-list-grid">
         <ul class="feature-list">
           <li>Cryogenic Coriolis mass flowmeter</li>
-          <li>Cryogenic stainless-steel process piping and isolation valves</li>
-          <li>Cryogenic FCV / batch / ESD valves</li>
-          <li>Pressure transmitters and cryogenic temperature transmitters</li>
+          <li>Cryogenic-rated pressure and temperature transmitters</li>
+          <li>Fail-safe cryogenic control/batch/ESD valve arrangement, extended bonnet/stem where required</li>
+          <li>Dedicated BOG/vapour-return connection and isolation/control philosophy</li>
         </ul>
         <ul class="feature-list">
-          <li>Explosion-proof batch control</li>
-          <li>BOG/vapour-return connection</li>
-          <li>Loading-arm / hose / ERC interface</li>
-          <li>Gas-detection and ESD system interface; insulated or vacuum-jacketed piping option</li>
+          <li>Explosion-proof local controller or TAS-integrated controller</li>
+          <li>Cryogenic loading arm or hose with ERC/breakaway philosophy</li>
+          <li>Thermal relief valves on sections where cryogenic liquid can be blocked in</li>
+          <li>Supports, flexibility and insulation/vacuum-jacket philosophy — project-specific</li>
         </ul>
       </div>
     <h2 style="margin-top:40px;">Advantages</h2>
     <div class="col-list-grid">
         <ul class="feature-list">
-          <li>Direct LNG mass measurement</li>
-          <li>Cryogenic-specific engineering, integrated cooldown monitoring</li>
+          <li>Cryogenic Coriolis suits direct mass measurement without a conventional atmospheric-liquid air eliminator</li>
+          <li>Batch controller coordinates preset quantity, cryogenic Coriolis totalisation and batch termination</li>
         </ul>
         <ul class="feature-list">
-          <li>Compact packaged construction, reduced field assembly</li>
-          <li>ESD/ERC integration, BOG/vapour-return compatibility, terminal automation ready</li>
+          <li>Controlled cooldown establishes stable cryogenic conditions before custody/batch measurement</li>
+          <li>ESD, gas-detection, loading-arm/ERC and vapour/BOG permissives coordinate with the terminal LNG safety system</li>
         </ul>
       </div>
     <p style="max-width:820px;margin-top:20px;font-size:0.92rem;color:var(--text-muted);"><strong>Design boundary:</strong> final LNG design requires project-specific cryogenic process data, BOG philosophy, hazardous-area classification, loading-arm/ERC data and thermal-stress analysis — no generic ambient-service pressure/temperature values should be carried into this model.</p>
+  </div>
+</section>
+
+<section class="dossier-section" id="specifications">
+  <div class="container">
+    <p class="dossier-kicker">Technical specification</p>
+    <h2>Specifications</h2>
+    <table class="spec-table">
+      <tr><th>Product family</th><td>LNS-MS Series — tanker loading metering skids</td></tr>
+      <tr><th>Model</th><td>LNS-MS-LNG — Liquefied Natural Gas</td></tr>
+      <tr><th>Metering principle</th><td>Cryogenic Coriolis mass flowmeter</td></tr>
+      <tr><th>Flow range / line size / design pressure</th><td>Project-specific; meter and line size selected from min / normal / max loading rate</td></tr>
+      <tr><th>Design temperature</th><td>Project-specific cryogenic LNG service; operating temperature typically near −162 °C, design minimum established from project process/relief cases</td></tr>
+      <tr><th>Measurement outputs</th><td>Mass flow, mass total; density/temperature outputs where supported by selected cryogenic Coriolis meter</td></tr>
+      <tr><th>Meter accuracy</th><td>Vendor/model/project-specific; custody-transfer configuration where required</td></tr>
+      <tr><th>Pressure drop</th><td>Calculated for the complete cryogenic skid with adequate liquid-phase/anti-flash margin at min/normal/max flow</td></tr>
+      <tr><th>Process connection</th><td>ASME / EN / project flange standard</td></tr>
+      <tr><th>Piping material</th><td>Cryogenic-compatible stainless steel / project-specific</td></tr>
+      <tr><th>Insulation</th><td>Cryogenic insulation or vacuum-jacketed configuration according to allowable heat leak, cooldown and project philosophy</td></tr>
+      <tr><th>BOG / vapour return</th><td>Project-specific BOG/vapour-return connection, sized for cooldown and loading operating cases</td></tr>
+      <tr><th>Hazardous area</th><td>ATEX / IECEx / NEC / local requirement as specified by project</td></tr>
+      <tr><th>Communication</th><td>Modbus RTU/TCP, Ethernet, pulse, frequency, analog/digital I/O as selected</td></tr>
+    </table>
+    <p style="max-width:820px;margin-top:20px;font-size:0.92rem;color:var(--text-muted);"><strong>Selection note:</strong> Cryogenic Coriolis is the standard LNS-MS-LNG metering approach for direct mass measurement at LNG temperature. Meter selection is coordinated with cooldown, liquid-phase stability, pressure drop, thermal contraction and insulation philosophy; the sensor, transmitter and seals must be specifically qualified for the project LNG temperature and hazardous-area requirements.</p>
+  </div>
+</section>
+
+<section class="dossier-section section-alt" id="scope">
+  <div class="container">
+    <p class="dossier-kicker">Scope of supply</p>
+    <h2>Standard scope of supply</h2>
+    <div class="col-list-grid">
+        <ul class="feature-list">
+          <li>Fabricated structural skid base frame with lifting provision</li>
+          <li>Cryogenic manual isolation valve or actuated ESDV, as specified</li>
+          <li>Low-pressure-drop cryogenic strainer where specifically required</li>
+          <li>Cryogenic-rated pressure gauge and pressure transmitter</li>
+          <li>Cryogenic temperature element/transmitter for cooldown and transfer monitoring</li>
+          <li>Cryogenic Coriolis mass flowmeter — primary metering device</li>
+        </ul>
+        <ul class="feature-list">
+          <li>Cryogenic FCV/batch/ESD valve with fail-safe action, cryogenic check valve where required</li>
+          <li>Explosion-proof batch controller with local display, keypad, preset, totalisation and I/O</li>
+          <li>Local ESD pushbutton, bonding/static-ground permissive where required</li>
+          <li>Cryogenic insulation/vacuum jacketing per project thermal design</li>
+          <li>Dedicated BOG/vapour-return connection with cryogenic valves as required</li>
+          <li>Thermal relief valves for blocked-in liquid sections; gas-detection/ESD interface to terminal LNG safety system</li>
+        </ul>
+      </div>
+    <h2 style="margin-top:40px;">Minimum batch permissive — typical</h2>
+    <div class="col-list-grid">
+        <ul class="feature-list">
+          <li>Valid product / order / batch selected</li>
+          <li>Cryogenic route and source system ready</li>
+          <li>Cooldown sequence complete or approved loading condition established</li>
+        </ul>
+        <ul class="feature-list">
+          <li>Meter, batch controller and cryogenic valve chain healthy</li>
+          <li>BOG/vapour-return system ready where required</li>
+          <li>Loading-arm/hose and ERC interface healthy; no active ESD, gas-detection trip or critical skid fault</li>
+        </ul>
+      </div>
   </div>
 </section>
 
@@ -142,7 +206,7 @@
   <div class="container">
     <p class="dossier-kicker">Loading sequence</p>
     <h2>Typical LNG loading sequence</h2>
-    <p style="max-width:820px;">System ready → Cryogenic cooldown → Stable liquid conditions → Batch start → Cryogenic Coriolis metering → Controlled transfer → Batch completion → Valve closure → Safe isolation. Where required, vapour/BOG return operates simultaneously.</p>
+    <p style="max-width:820px;">Cryogenic inlet isolation/ESDV → Cryogenic strainer where specifically required → Cryogenic pressure/temperature measurement → Cryogenic Coriolis mass flowmeter → Cryogenic FCV/batch/ESD valve → Isolation → Cryogenic loading arm or hose/ERC — with controlled cooldown/recirculation and BOG/vapour return provided as parallel connections where required. Blocked-in liquid sections are protected by thermal relief.</p>
   </div>
 </section>
 
@@ -168,8 +232,8 @@
     <p class="dossier-kicker">Downloads</p>
     <h2>Documents</h2>
     <div class="dl-links" style="max-width:480px;">
+      <a href="documents/Metering%20Skids/LNS-MS-LNG%20DATA%20SHEET%20for%20LNG%20for%20liquified%20natural%20gas-0.pdf" class="dl-link">LNS-MS-LNG datasheet <span>PDF</span></a>
       <a href="documents/Metering%20Skids/LINESIG%20LNS-MS-%20Metering%20Skid%20Product%20Family%20Rev%200.0.pdf" class="dl-link">Product family brochure <span>PDF</span></a>
-      <span class="dl-link disabled">LNS-MS-LNG datasheet <span>Coming soon</span></span>
     </div>
   </div>
 </section>
@@ -221,7 +285,7 @@
       <div>
         <h4>Resources</h4>
         <ul>
-          <li><a href="certifications.html">Certifications</a></li>
+          <!-- <li><a href="certifications.html">Certifications</a></li> -->
           <li><a href="projects.html">Projects</a></li>
           <li><a href="downloads.html">Downloads</a></li>
         </ul>
