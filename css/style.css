@@ -417,23 +417,24 @@ section { padding: 84px 0; }
   justify-content: space-between;
   align-items: center;
   padding: 12px 14px;
-  border: 1px solid var(--line);
+  background: var(--red);
+  border: 1px solid var(--red);
   border-radius: var(--radius);
   font-family: var(--font-mono);
   font-size: 0.82rem;
   letter-spacing: 0.03em;
-  color: var(--text);
-  transition: border-color 0.15s, color 0.15s;
+  color: #fff;
+  transition: all 0.15s;
 }
 .dl-link span {
   font-size: 0.68rem;
-  color: var(--text-faint);
-  border: 1px solid var(--line);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 999px;
   padding: 2px 8px;
 }
-.dl-link:hover { border-color: var(--red); color: var(--red); }
-.dl-link:hover span { border-color: var(--red); color: var(--red); }
+.dl-link:hover { background: var(--red-dark); border-color: var(--red-dark); color: #fff; }
+.dl-link:hover span { border-color: #fff; color: #fff; }
 .dl-link.disabled { opacity: 0.5; pointer-events: none; }
 
 /* =========================================================
