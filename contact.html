@@ -63,27 +63,28 @@
 <section>
   <div class="container split">
     <div>
-      <form id="contact-form">
+      <form id="contact-form" novalidate>
         <div class="form-grid">
           <div class="form-field">
-            <label for="name">Full name</label>
-            <input type="text" id="name" name="name" required>
+            <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" required>
           </div>
           <div class="form-field">
-            <label for="company">Company</label>
-            <input type="text" id="company" name="company">
+            <label for="company">Company <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="company" name="company" autocomplete="organization" required>
           </div>
           <div class="form-field">
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
           </div>
           <div class="form-field">
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel">
           </div>
           <div class="form-field full">
-            <label for="product">Product of interest</label>
-            <select id="product" name="product">
+            <label for="product">Product of interest <span class="req" aria-hidden="true">*</span></label>
+            <select id="product" name="product" required>
+              <option value="" disabled selected>Select a product</option>
               <option>Pig launcher &amp; receiver</option>
               <option>Pig signaler</option>
               <option>Pig valve</option>
@@ -96,12 +97,13 @@
             </select>
           </div>
           <div class="form-field full">
-            <label for="message">Message</label>
+            <label for="message">Message <span class="req" aria-hidden="true">*</span></label>
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
         </div>
+        <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none" aria-hidden="true">
         <button type="submit" class="btn btn-primary">Send message</button>
-        <p id="form-status" class="form-status"></p>
+        <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
 

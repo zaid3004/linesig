@@ -167,6 +167,8 @@ p { color: var(--text-muted); }
   padding: 6px 2px;
   border-bottom: 2px solid transparent;
   transition: color 0.15s, border-color 0.15s;
+  font-weight: bolder;
+  color: #000000;
 }
 .nav-links a:hover,
 .nav-links a.active {
@@ -629,6 +631,12 @@ section { padding: 84px 0; }
   display: none;
 }
 .form-status.show { display: block; color: var(--red); }
+.form-status.success { color: #1f7a3d; }
+.form-field .req { color: var(--red); margin-left: 2px; }
+.form-field input.invalid,
+.form-field select.invalid,
+.form-field textarea.invalid { border-color: var(--red); }
+.btn[disabled] { opacity: 0.6; cursor: not-allowed; }
 
 .contact-info-item {
   display: flex;
@@ -790,7 +798,7 @@ section { padding: 84px 0; }
 }
 
 @media (max-width: 680px) {
-  .nav-links { display: none; }
+  .nav-links { display: none; font-weight: bold; color: #000000; }
   .nav-toggle { display: flex; }
   .nav-links.open {
     display: flex;
@@ -803,6 +811,7 @@ section { padding: 84px 0; }
     padding: 20px 32px;
     border-bottom: 1px solid var(--line);
     gap: 18px;
+    font-weight: bold;
   }
   .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .form-grid { grid-template-columns: 1fr; }
