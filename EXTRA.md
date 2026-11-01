@@ -60,7 +60,6 @@ To switch, only two places need changing: the `FORM_ENDPOINT` constant at the to
 
 | Item | Where | Notes |
 |---|---|---|
-| "Coming soon" documents | `downloads.html` and product pages | Pig valve operation manual is still pending. Replace the `<a class="dl-link disabled">` with a real link when the file exists. The VRU documents are linked and cover the LNS-VRU-WET reference configuration. |
 | Map | `contact.html` | A map embed block is commented out. Add a Google Maps / OpenStreetMap iframe if wanted. |
 | Model codes | VRU page and products page | `LNS-VRU` matches the supplied VRU file names (`LNS-VRU-WET`). The VRU source document says codes are not yet assigned, so confirm with the client. |
 | Venturi / Ventury | `images/scrubber-ventury.png`, `documents/Scrubber Systems/*VENTURY*` | Site text says "Venturi". The image file and PDF file names use "ventury". Visitors never see the file names. |
