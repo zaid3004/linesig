@@ -13,8 +13,8 @@ The site is a **static HTML / CSS / JS** website. There is no build step, no fra
 ## 1. Project layout
 
 ```
-index.html, about.html, products.html, projects.html, downloads.html,
-contact.html, certifications.html          top-level pages
+index.html, about.html, products.html, downloads.html,
+contact.html                                top-level pages
 product-*.html                              one page per product / sub-type
 css/style.css                               the only stylesheet (design tokens in :root)
 js/script.js                                mobile nav, active-link highlight, contact form
@@ -60,14 +60,9 @@ To switch, only two places need changing: the `FORM_ENDPOINT` constant at the to
 
 | Item | Where | Notes |
 |---|---|---|
-| Certifications page | `certifications.html` | Placeholder. The nav and footer links are **commented out** (`<!-- ... -->`). Add the real content, then uncomment the link in every page. |
-| Broken placeholder link | `downloads.html`, near the bottom ("Company capability brochure") | Points to `downloads/linesig-pig-launcher-receiver-flyer.pdf`, which does not exist. Replace with the real corporate brochure or delete the line. |
-| "Coming soon" documents | `downloads.html` and product pages | VRU (flyer, datasheet, manual), Pig valve operation manual. Replace each `<a class="dl-link disabled">` with a real link when the files exist. |
+| "Coming soon" documents | `downloads.html` and product pages | Pig valve operation manual is still pending. Replace the `<a class="dl-link disabled">` with a real link when the file exists. The VRU documents are linked and cover the LNS-VRU-WET reference configuration. |
 | Map | `contact.html` | A map embed block is commented out. Add a Google Maps / OpenStreetMap iframe if wanted. |
-| Footer credit line | every page footer | "Site built as a static, mobile-responsive HTML/CSS/JS deliverable." Remove or replace before go-live. |
-| Projects page | `projects.html` | Review the content with the client before go-live. |
-| Model codes | VRU page and products page | The VRU model tag `LNS-VRU` is a working label. The VRU source document says model codes are not yet assigned. Confirm with the client. |
-| File naming | `documents/Dozing Skids/` | The PDG flyer file is named `...PDM MICRO PRECISION PUMP FLYER.pdf` but is labelled PDG on the site. The Dosing folder is spelled "Dozing". Cosmetic only. |
+| Model codes | VRU page and products page | `LNS-VRU` matches the supplied VRU file names (`LNS-VRU-WET`). The VRU source document says codes are not yet assigned, so confirm with the client. |
 | Venturi / Ventury | `images/scrubber-ventury.png`, `documents/Scrubber Systems/*VENTURY*` | Site text says "Venturi". The image file and PDF file names use "ventury". Visitors never see the file names. |
 
 ---
@@ -81,7 +76,7 @@ The client's IT team owns these. Nothing here is wired up yet:
 - Analytics and tag manager snippets (add in `<head>` of every page, or via your CMS).
 - Google Search Console / Bing Webmaster verification.
 - Redirect `linesig.com` to `www.linesig.com` (or the reverse) with a 301, and force HTTPS.
-- Add a favicon (`<link rel="icon">`). The site does not ship one yet.
+- A basic favicon (`images/favicon.png`) is included. Replace with a proper icon set if the client has one.
 - Cookie / privacy notice and a privacy policy page if you add analytics or keep Google Fonts (see 5).
 
 ---
